@@ -11,15 +11,14 @@ GCN(Graph Convolutional Network)은 그래프 구조를 활용하여 **노드가
 
 예를 들어, 다음과 같은 인접 행렬 \( A \)이 있을 때:
 
-$
-A = \begin{pmatrix} 0 & 1 & 1 \\ 1 & 0 & 0 \\ 1 & 0 & 0 \end{pmatrix}
-$
+$$A = \begin{pmatrix} 0 & 1 & 1 \\ 1 & 0 & 0 \\ 1 & 0 & 0 \end{pmatrix}$$
+
 
 단위 행렬 \( I \) 를 더하여 자기 연결을 추가합니다.
 
-$
-A + I = \begin{pmatrix} 0 & 1 & 1 \\ 1 & 0 & 0 \\ 1 & 0 & 0 \end{pmatrix} + \begin{pmatrix} 1 & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 1 \end{pmatrix} = \begin{pmatrix} 1 & 1 & 1 \\ 1 & 1 & 0 \\ 1 & 0 & 1 \end{pmatrix}
-$
+$$
+A + I = $\begin{pmatrix} 0 & 1 & 1 \\ 1 & 0 & 0 \\ 1 & 0 & 0 \end{pmatrix} + \begin{pmatrix} 1 & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 1 \end{pmatrix} = \begin{pmatrix} 1 & 1 & 1 \\ 1 & 1 & 0 \\ 1 & 0 & 1 \end{pmatrix}
+$$
 
 이제 각 노드는 자기 자신과도 연결된 상태가 되어, 정보를 전파할 때 자기 자신의 특성을 반영할 수 있습니다.
 
